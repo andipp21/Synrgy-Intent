@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SerializableFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serializable INTENT"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvNamaSerializable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="128dp"
+            android:text="Nama : "
+            android:layout_marginStart="32dp"
+            android:textSize="24sp"/>
+
+        <EditText
+            android:id="@+id/etNamaSerializable"
+            app:layout_constraintStart_toEndOf="@id/tvNamaSerializable"
+            app:layout_constraintBottom_toBottomOf="@id/tvNamaSerializable"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/tvUmurSerializable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvNamaSerializable"
+            app:layout_constraintEnd_toEndOf="@id/tvNamaSerializable"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="32dp"
+            android:text="Umur : "
+            android:textSize="24sp"/>
+
+        <EditText
+            android:id="@+id/etUmurSerializable"
+            app:layout_constraintStart_toEndOf="@id/tvUmurSerializable"
+            app:layout_constraintBottom_toBottomOf="@id/tvUmurSerializable"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/btnSubmitSerializable"
+            app:layout_constraintTop_toBottomOf="@id/tvUmurSerializable"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
